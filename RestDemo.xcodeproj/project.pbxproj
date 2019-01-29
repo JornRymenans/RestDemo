@@ -12,6 +12,8 @@
 		7148CD4C22004A8E00A06F53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7148CD4A22004A8E00A06F53 /* Main.storyboard */; };
 		7148CD4E22004A9000A06F53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7148CD4D22004A9000A06F53 /* Assets.xcassets */; };
 		7148CD5122004A9000A06F53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7148CD4F22004A9000A06F53 /* LaunchScreen.storyboard */; };
+		7148CD5A22004DB300A06F53 /* UserPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7148CD5922004DB300A06F53 /* UserPost.swift */; };
+		7148CD5C22004EF100A06F53 /* PostParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7148CD5B22004EF100A06F53 /* PostParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		7148CD4D22004A9000A06F53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7148CD5022004A9000A06F53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7148CD5222004A9000A06F53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7148CD5922004DB300A06F53 /* UserPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPost.swift; sourceTree = "<group>"; };
+		7148CD5B22004EF100A06F53 /* PostParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		7148CD4522004A8E00A06F53 /* RestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7148CD5822004D7100A06F53 /* Model */,
 				7148CD4622004A8E00A06F53 /* AppDelegate.swift */,
 				7148CD4822004A8E00A06F53 /* ViewController.swift */,
 				7148CD4A22004A8E00A06F53 /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				7148CD5222004A9000A06F53 /* Info.plist */,
 			);
 			path = RestDemo;
+			sourceTree = "<group>";
+		};
+		7148CD5822004D7100A06F53 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7148CD5922004DB300A06F53 /* UserPost.swift */,
+				7148CD5B22004EF100A06F53 /* PostParser.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +151,8 @@
 			files = (
 				7148CD4922004A8E00A06F53 /* ViewController.swift in Sources */,
 				7148CD4722004A8E00A06F53 /* AppDelegate.swift in Sources */,
+				7148CD5C22004EF100A06F53 /* PostParser.swift in Sources */,
+				7148CD5A22004DB300A06F53 /* UserPost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +307,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = swift.jorn.RestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,7 +324,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = swift.jorn.RestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
